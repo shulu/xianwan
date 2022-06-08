@@ -48,7 +48,7 @@ export default {
     top: 0;
     left: 0;
     right: 0;
-
+    z-index: 101;
     border: 1px solid lightgray;
     height: 6rem;
 
@@ -104,6 +104,7 @@ export default {
             width: 6rem;
             margin: 0.3rem 1rem;
             line-height: 4rem;
+            font-size: 1.5rem;
             border: 1px solid #fefb05;
             border-radius: 1rem;
             float: right;
@@ -137,6 +138,7 @@ export default {
                 border-radius: 0.5rem;
                 width: 8rem;
                 margin: 0.3rem -0.5rem;
+                background-color: #fff;
 
                 .option {
                     border-bottom: 1px solid lightgray;
@@ -145,19 +147,6 @@ export default {
                     background-color: #000;
                     color: #fff;
                 }
-            }
-        }
-
-        .post:hover .post-options {
-            display: block;
-        }
-
-        @keyframes slide-up {
-            from {
-                display: none;
-            }
-            to {
-                display: inline-block;
             }
         }
     }
